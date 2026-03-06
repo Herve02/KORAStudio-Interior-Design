@@ -1,0 +1,687 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>KORA Studio — Interior Design | Kigali</title>
+  <meta name="description" content="KORA Studio: Kigali's most daring interior design practice. We build spaces that provoke, move and endure."/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Outfit:wght@200;300;400;500&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div id="cur"></div>
+  <div id="cur-ring"></div>
+
+  <!-- ═══ NAV ═══════════════════════════════════════════════ -->
+  <nav id="main-nav">
+    <a href="#" class="nav-logo">KO<span>R</span>A</a>
+    <ul class="nav-links">
+      <li><a href="#about">Studio</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#portfolio">Portfolio</a></li>
+      <li><a href="#process">Process</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <a href="#contact" class="nav-btn">Start a Project</a>
+    <button class="hamburger" onclick="toggleMenu()" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- ═══ HERO ═══════════════════════════════════════════════ -->
+  <section id="hero">
+    <div class="hero-bg">
+      <img id="hero-img" src="https://images.unsplash.com/photo-1618219908412-a29a1bb7b86e?w=1800&q=80" alt="KORA Studio interior"/>
+    </div>
+
+    <div class="hero-ghost-text" aria-hidden="true">KORA</div>
+
+    <div class="hero-content">
+      <div class="hero-left">
+        <div class="hero-kicker">Kigali · Rwanda — Est. 2015</div>
+        <h1 class="hero-title">
+          SPACE<br/>
+          IS THE<br/>
+          <span class="copper">CANVAS.</span>
+        </h1>
+      </div>
+      <div class="hero-right">
+        <p class="hero-desc">
+          KORA Studio is Kigali's most daring interior design practice. We treat every room as a statement — bold, deliberate, and impossible to ignore. Architecture is our language. Space is what we say.
+        </p>
+        <div class="hero-actions">
+          <a href="#portfolio" class="btn-copper">View Portfolio</a>
+          <a href="#about" class="btn-ghost-copper">Our Philosophy</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-scroll">
+      <div class="hero-scroll-line"></div>
+      <span>Scroll</span>
+    </div>
+  </section>
+
+  <!-- ═══ TICKER ═════════════════════════════════════════════ -->
+  <div class="ticker" aria-hidden="true">
+    <div class="ticker-inner">
+      <span class="ticker-item">KIGALI DESIGN AWARD 2024</span><span class="ticker-sep">✦</span>
+      <span class="ticker-item">EAST AFRICA'S TOP 10 STUDIOS</span><span class="ticker-sep">✦</span>
+      <span class="ticker-item">84 PROJECTS COMPLETED</span><span class="ticker-sep">✦</span>
+      <span class="ticker-item">ARCHITECTURAL DIGEST FEATURE</span><span class="ticker-sep">✦</span>
+      <span class="ticker-item">RWANDA GREEN BUILDING CERTIFIED</span><span class="ticker-sep">✦</span>
+      <span class="ticker-item">DESIGNAFRICA FINALIST 2023</span><span class="ticker-sep">✦</span>
+      &nbsp;&nbsp;&nbsp;&nbsp;
+      <span class="ticker-item">KIGALI DESIGN AWARD 2024</span><span class="ticker-sep">✦</span>
+      <span class="ticker-item">EAST AFRICA'S TOP 10 STUDIOS</span><span class="ticker-sep">✦</span>
+      <span class="ticker-item">84 PROJECTS COMPLETED</span><span class="ticker-sep">✦</span>
+      <span class="ticker-item">ARCHITECTURAL DIGEST FEATURE</span><span class="ticker-sep">✦</span>
+      <span class="ticker-item">RWANDA GREEN BUILDING CERTIFIED</span><span class="ticker-sep">✦</span>
+      <span class="ticker-item">DESIGNAFRICA FINALIST 2023</span><span class="ticker-sep">✦</span>
+    </div>
+  </div>
+
+  <!-- ═══ NUMBERS ════════════════════════════════════════════ -->
+  <div id="numbers">
+    <div class="num-block reveal">
+      <div class="num-val" data-target="84">0</div>
+      <div class="num-label">Projects Completed</div>
+    </div>
+    <div class="num-block reveal" style="transition-delay:.1s">
+      <div class="num-val" data-target="12">0</div>
+      <div class="num-label">Design Awards</div>
+    </div>
+    <div class="num-block reveal" style="transition-delay:.2s">
+      <div class="num-val" data-target="10">0</div>
+      <div class="num-label">Years in Practice</div>
+    </div>
+    <div class="num-block reveal" style="transition-delay:.3s">
+      <div class="num-val" data-target="100">0</div>
+      <div class="num-label">% Client Return Rate</div>
+    </div>
+  </div>
+
+  <!-- ═══ STATEMENT ══════════════════════════════════════════ -->
+  <section id="statement">
+    <div class="stmt-label reveal-l">
+      Our Manifesto
+    </div>
+    <p class="stmt-text reveal-r">
+      "We believe every space carries a <strong>latent life</strong> — waiting to be released. Our work is the act of releasing it. Not decoration. Not renovation. <strong>Revelation.</strong>"
+    </p>
+  </section>
+
+  <!-- ═══ ABOUT ══════════════════════════════════════════════ -->
+  <section id="about">
+    <div class="about-grid">
+      <div class="about-img-side reveal-l">
+        <img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=1000&q=80" alt="KORA Studio at work"/>
+        <div class="section-num" aria-hidden="true">01</div>
+      </div>
+      <div class="about-text-side reveal-r">
+        <p class="section-tag">The Studio</p>
+        <h2 class="big-head">
+          WHO<br/>WE ARE
+          <em>and what we believe</em>
+        </h2>
+        <p class="body-p">
+          KORA Studio was founded in Kigali in 2015 with a single conviction: that the built environment should provoke feeling, not just function. We are a team of seven architects, designers, and craftspeople united by a refusal to settle for the expected.
+        </p>
+        <p class="body-p">
+          Our work spans private residences, corporate headquarters, hotels, and cultural institutions across Rwanda and East Africa. Each project is a new argument — for beauty, for boldness, for spaces that make people feel something they cannot quite name.
+        </p>
+        <div class="about-feats">
+          <div class="feat-item">Full Design-Build Capability</div>
+          <div class="feat-item">East African Material Sourcing</div>
+          <div class="feat-item">Architecture + Interior Integration</div>
+          <div class="feat-item">Artisan Craftwork Network</div>
+          <div class="feat-item">Sustainable Design Practice</div>
+          <div class="feat-item">Hospitality Specialist</div>
+        </div>
+        <div class="about-cta">
+          <a href="#services" class="btn-copper">Explore Services</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ SERVICES ═══════════════════════════════════════════ -->
+  <section id="services">
+    <div class="svc-header reveal">
+      <div>
+        <p class="section-tag">What We Do</p>
+        <h2 class="big-head" style="font-size:clamp(2.5rem,4vw,5rem);">
+          SIX<br/>SERVICES
+          <em>one vision</em>
+        </h2>
+      </div>
+      <p style="font-size:.85rem;font-weight:200;color:var(--muted);line-height:1.9;max-width:280px;align-self:flex-end;">
+        Click any service to see what is included, our typical timeline, and how to begin.
+      </p>
+    </div>
+
+    <div class="svc-grid reveal">
+
+      <div class="svc-card" onclick="openOv('residential')">
+        <img src="https://images.unsplash.com/photo-1618219908412-a29a1bb7b86e?w=900&q=80" alt="Residential"/>
+        <div class="svc-body">
+          <div class="svc-n">01</div>
+          <h3 class="svc-name">Residential Design</h3>
+          <p class="svc-excerpt">Complete home interiors — from first sketch through final installation. Spaces that carry the mark of the people who live in them.</p>
+          <span class="svc-open-label">Explore Service</span>
+        </div>
+      </div>
+
+      <div class="svc-card" onclick="openOv('commercial')">
+        <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=800&q=80" alt="Commercial"/>
+        <div class="svc-body">
+          <div class="svc-n">02</div>
+          <h3 class="svc-name">Commercial Interiors</h3>
+          <p class="svc-excerpt">Offices, retail, and showrooms designed to communicate your brand with the force of architecture.</p>
+          <span class="svc-open-label">Explore Service</span>
+        </div>
+      </div>
+
+      <div class="svc-card" onclick="openOv('hospitality')">
+        <img src="https://images.unsplash.com/photo-1566665797739-1674de7a421a?w=800&q=80" alt="Hospitality"/>
+        <div class="svc-body">
+          <div class="svc-n">03</div>
+          <h3 class="svc-name">Hospitality Design</h3>
+          <p class="svc-excerpt">Hotels, lodges, and restaurants that become destinations in their own right — experiences people travel to repeat.</p>
+          <span class="svc-open-label">Explore Service</span>
+        </div>
+      </div>
+
+      <div class="svc-card" onclick="openOv('spatial')">
+        <img src="https://images.unsplash.com/photo-1524758631624-e2822e304c36?w=800&q=80" alt="Spatial Architecture"/>
+        <div class="svc-body">
+          <div class="svc-n">04</div>
+          <h3 class="svc-name">Spatial Architecture</h3>
+          <p class="svc-excerpt">When the building itself must change. We redesign floor plans, volumes, and openings to unlock the full potential of your structure.</p>
+          <span class="svc-open-label">Explore Service</span>
+        </div>
+      </div>
+
+      <div class="svc-card" onclick="openOv('furniture')">
+        <img src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=800&q=80" alt="Bespoke Objects"/>
+        <div class="svc-body">
+          <div class="svc-n">05</div>
+          <h3 class="svc-name">Bespoke Objects</h3>
+          <p class="svc-excerpt">Statement pieces — furniture, lighting, and art objects — designed and made to exist only in your space.</p>
+          <span class="svc-open-label">Explore Service</span>
+        </div>
+      </div>
+
+      <div class="svc-card" onclick="openOv('consultation')">
+        <img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=800&q=80" alt="Design Consultation"/>
+        <div class="svc-body">
+          <div class="svc-n">06</div>
+          <h3 class="svc-name">Design Consultation</h3>
+          <p class="svc-excerpt">Two hours that reframe how you see your space — and give you a clear, actionable path forward with or without us.</p>
+          <span class="svc-open-label">Explore Service</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ═══ SERVICE OVERLAYS ════════════════════════════════════ -->
+
+  <!-- 01 Residential -->
+  <div class="svc-ov" id="ov-residential">
+    <div class="sov-back" onclick="closeOv()"></div>
+    <div class="sov-panel">
+      <div class="sov-img">
+        <img src="https://images.unsplash.com/photo-1618219908412-a29a1bb7b86e?w=1200&q=80" alt="Residential"/>
+        <button class="sov-close" onclick="closeOv()">✕</button>
+      </div>
+      <div class="sov-content">
+        <p class="sov-tag">Service 01</p>
+        <h2 class="sov-title">RESIDENTIAL<br/><span>DESIGN</span></h2>
+        <p class="sov-intro">A home should be the most precise expression of a life. We design interiors that hold memory, provoke joy, and age beautifully.</p>
+        <p class="sov-body">From concept through installation, we manage every dimension of the residential interior — spatial planning, material selection, custom millwork, lighting, furniture procurement, art placement, and final styling. We work with the finest local craftspeople and international suppliers to create rooms that cannot exist anywhere else.</p>
+        <p class="sov-inc-title">What Is Included</p>
+        <ul class="sov-inc">
+          <li>In-depth lifestyle brief and site survey</li>
+          <li>Concept presentation with mood boards and material palettes</li>
+          <li>Detailed floor plans, elevations, and 3D visualisations</li>
+          <li>Furniture specification and full procurement management</li>
+          <li>Custom millwork and joinery design</li>
+          <li>Lighting design and fixture sourcing</li>
+          <li>Art, textile, and accessory curation</li>
+          <li>On-site installation management and final styling</li>
+        </ul>
+        <div class="sov-tl">
+          <div class="tl-cell"><div class="tl-v">2–4w</div><div class="tl-l">Concept Phase</div></div>
+          <div class="tl-cell"><div class="tl-v">4–8w</div><div class="tl-l">Design & Spec</div></div>
+          <div class="tl-cell"><div class="tl-v">8–16w</div><div class="tl-l">Installation</div></div>
+        </div>
+        <button class="sov-cta" onclick="closeOv(); document.getElementById('contact').scrollIntoView({behavior:'smooth'})">Begin This Project</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- 02 Commercial -->
+  <div class="svc-ov" id="ov-commercial">
+    <div class="sov-back" onclick="closeOv()"></div>
+    <div class="sov-panel">
+      <div class="sov-img">
+        <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=1200&q=80" alt="Commercial"/>
+        <button class="sov-close" onclick="closeOv()">✕</button>
+      </div>
+      <div class="sov-content">
+        <p class="sov-tag">Service 02</p>
+        <h2 class="sov-title">COMMERCIAL<br/><span>INTERIORS</span></h2>
+        <p class="sov-intro">Your office is your first argument. We design commercial environments that win it before a word is spoken.</p>
+        <p class="sov-body">We work with leading Kigali businesses to create offices, showrooms, and retail environments that are as functional as they are impressive. Our commercial projects balance aesthetic ambition with operational logic — spaces that look extraordinary on day one and continue to perform for years.</p>
+        <p class="sov-inc-title">What Is Included</p>
+        <ul class="sov-inc">
+          <li>Brand and culture immersion session</li>
+          <li>Space planning and workflow optimisation</li>
+          <li>Corporate design concept and 3D visualisations</li>
+          <li>Ergonomic furniture and acoustic specification</li>
+          <li>Reception, boardroom, and breakout area design</li>
+          <li>Lighting and biophilic integration</li>
+          <li>Environmental graphics and signage direction</li>
+          <li>Contractor coordination and punch-list management</li>
+        </ul>
+        <div class="sov-tl">
+          <div class="tl-cell"><div class="tl-v">1–2w</div><div class="tl-l">Brief</div></div>
+          <div class="tl-cell"><div class="tl-v">3–5w</div><div class="tl-l">Design</div></div>
+          <div class="tl-cell"><div class="tl-v">4–12w</div><div class="tl-l">Fit-out</div></div>
+        </div>
+        <button class="sov-cta" onclick="closeOv(); document.getElementById('contact').scrollIntoView({behavior:'smooth'})">Start Commercial Project</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- 03 Hospitality -->
+  <div class="svc-ov" id="ov-hospitality">
+    <div class="sov-back" onclick="closeOv()"></div>
+    <div class="sov-panel">
+      <div class="sov-img">
+        <img src="https://images.unsplash.com/photo-1566665797739-1674de7a421a?w=1200&q=80" alt="Hospitality"/>
+        <button class="sov-close" onclick="closeOv()">✕</button>
+      </div>
+      <div class="sov-content">
+        <p class="sov-tag">Service 03</p>
+        <h2 class="sov-title">HOSPITALITY<br/><span>DESIGN</span></h2>
+        <p class="sov-intro">Hospitality design is the highest form of the craft — because here, the experience is the product.</p>
+        <p class="sov-body">We design hotels, boutique lodges, and restaurants across Rwanda and East Africa that become known for their spaces as much as their service. Our hospitality work is rooted in Rwandan cultural identity — never pastiche, always authentic — creating environments that give guests a genuine sense of place.</p>
+        <p class="sov-inc-title">What Is Included</p>
+        <ul class="sov-inc">
+          <li>Hospitality concept and brand narrative</li>
+          <li>Public area, lobby, and F&B design</li>
+          <li>Guest room prototype and rollout</li>
+          <li>Full FF&E specification and procurement</li>
+          <li>Back-of-house and operational flow design</li>
+          <li>Outdoor and landscape space design</li>
+          <li>Lighting atmosphere and scene design</li>
+          <li>Pre-opening installation and styling</li>
+        </ul>
+        <div class="sov-tl">
+          <div class="tl-cell"><div class="tl-v">2–4w</div><div class="tl-l">Concept</div></div>
+          <div class="tl-cell"><div class="tl-v">6–10w</div><div class="tl-l">Design</div></div>
+          <div class="tl-cell"><div class="tl-v">12–24w</div><div class="tl-l">Delivery</div></div>
+        </div>
+        <button class="sov-cta" onclick="closeOv(); document.getElementById('contact').scrollIntoView({behavior:'smooth'})">Discuss Your Property</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- 04 Spatial Architecture -->
+  <div class="svc-ov" id="ov-spatial">
+    <div class="sov-back" onclick="closeOv()"></div>
+    <div class="sov-panel">
+      <div class="sov-img">
+        <img src="https://images.unsplash.com/photo-1524758631624-e2822e304c36?w=1200&q=80" alt="Spatial Architecture"/>
+        <button class="sov-close" onclick="closeOv()">✕</button>
+      </div>
+      <div class="sov-content">
+        <p class="sov-tag">Service 04</p>
+        <h2 class="sov-title">SPATIAL<br/><span>ARCHITECTURE</span></h2>
+        <p class="sov-intro">Sometimes a great interior is not possible until the building itself is reimagined. We do both.</p>
+        <p class="sov-body">Our spatial architecture service addresses the bones of a building — floor plan reconfigurations, wall removals, volume changes, new openings, and structural interventions — to unlock the full potential of a space before interior design begins. We work with our network of structural engineers and contractors to deliver the changes safely and beautifully.</p>
+        <p class="sov-inc-title">What Is Included</p>
+        <ul class="sov-inc">
+          <li>Structural and spatial audit with as-built survey</li>
+          <li>Floor plan reconfiguration options</li>
+          <li>Coordination with structural engineers</li>
+          <li>Volume and opening modification design</li>
+          <li>Natural light optimisation strategy</li>
+          <li>Construction drawings and specifications</li>
+          <li>Contractor briefing and site supervision</li>
+        </ul>
+        <div class="sov-tl">
+          <div class="tl-cell"><div class="tl-v">1–2w</div><div class="tl-l">Survey</div></div>
+          <div class="tl-cell"><div class="tl-v">3–6w</div><div class="tl-l">Design</div></div>
+          <div class="tl-cell"><div class="tl-v">6–16w</div><div class="tl-l">Works</div></div>
+        </div>
+        <button class="sov-cta" onclick="closeOv(); document.getElementById('contact').scrollIntoView({behavior:'smooth'})">Reimagine Your Structure</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- 05 Bespoke Objects -->
+  <div class="svc-ov" id="ov-furniture">
+    <div class="sov-back" onclick="closeOv()"></div>
+    <div class="sov-panel">
+      <div class="sov-img">
+        <img src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=1200&q=80" alt="Bespoke Objects"/>
+        <button class="sov-close" onclick="closeOv()">✕</button>
+      </div>
+      <div class="sov-content">
+        <p class="sov-tag">Service 05</p>
+        <h2 class="sov-title">BESPOKE<br/><span>OBJECTS</span></h2>
+        <p class="sov-intro">The rarest objects are those made for a single room — designed once, for one person, in one place.</p>
+        <p class="sov-body">We design and commission bespoke furniture, lighting fixtures, and art objects for our projects and as standalone commissions. Every piece begins as a drawing and ends as something that could not have been bought — only made. We collaborate with Rwanda's finest woodworkers, metalworkers, ceramic artists, and textile makers.</p>
+        <p class="sov-inc-title">What Is Included</p>
+        <ul class="sov-inc">
+          <li>Design brief and craftsperson matching</li>
+          <li>Sketches and material presentation for approval</li>
+          <li>Workshop visits during production</li>
+          <li>Quality review at each production milestone</li>
+          <li>White-glove delivery and installation</li>
+          <li>Material provenance documentation</li>
+          <li>Care and maintenance guide</li>
+        </ul>
+        <div class="sov-tl">
+          <div class="tl-cell"><div class="tl-v">1–2w</div><div class="tl-l">Design</div></div>
+          <div class="tl-cell"><div class="tl-v">4–8w</div><div class="tl-l">Making</div></div>
+          <div class="tl-cell"><div class="tl-v">1 day</div><div class="tl-l">Install</div></div>
+        </div>
+        <button class="sov-cta" onclick="closeOv(); document.getElementById('contact').scrollIntoView({behavior:'smooth'})">Commission a Piece</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- 06 Consultation -->
+  <div class="svc-ov" id="ov-consultation">
+    <div class="sov-back" onclick="closeOv()"></div>
+    <div class="sov-panel">
+      <div class="sov-img">
+        <img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=1200&q=80" alt="Consultation"/>
+        <button class="sov-close" onclick="closeOv()">✕</button>
+      </div>
+      <div class="sov-content">
+        <p class="sov-tag">Service 06</p>
+        <h2 class="sov-title">DESIGN<br/><span>CONSULTATION</span></h2>
+        <p class="sov-intro">Two hours with a KORA designer will change how you see the space you live or work in — permanently.</p>
+        <p class="sov-body">Our design consultation is a focused, on-site session for those who want expert direction without committing to a full project. A senior KORA designer will visit, assess your space honestly, and hand you a written report with clear, prioritised actions you can take immediately. The full consultation fee is credited against any subsequent project.</p>
+        <p class="sov-inc-title">What Is Included</p>
+        <ul class="sov-inc">
+          <li>2-hour on-site session with a senior KORA designer</li>
+          <li>Spatial, light, and material assessment</li>
+          <li>Prioritised improvement roadmap</li>
+          <li>Colour, material, and furniture direction notes</li>
+          <li>Written report delivered within 48 hours</li>
+          <li>30-minute follow-up call</li>
+          <li>Full fee credited to any future project</li>
+        </ul>
+        <div class="sov-tl">
+          <div class="tl-cell"><div class="tl-v">2 hrs</div><div class="tl-l">On-site</div></div>
+          <div class="tl-cell"><div class="tl-v">48 hrs</div><div class="tl-l">Report</div></div>
+          <div class="tl-cell"><div class="tl-v">30 min</div><div class="tl-l">Follow-up</div></div>
+        </div>
+        <button class="sov-cta" onclick="closeOv(); document.getElementById('contact').scrollIntoView({behavior:'smooth'})">Book a Consultation</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══ PORTFOLIO ═══════════════════════════════════════════ -->
+  <section id="portfolio">
+    <div class="portfolio-inner">
+      <div class="portfolio-header reveal">
+        <div>
+          <p class="section-tag">Selected Work</p>
+          <h2 class="big-head" style="font-size:clamp(3rem,5vw,6rem);">
+            THE<br/>WORK
+          </h2>
+        </div>
+        <a href="#contact" class="btn-ghost-copper">Commission a Project</a>
+      </div>
+
+      <div class="portfolio-bento reveal">
+        <div class="pb-item">
+          <img src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?w=900&q=80" alt="Kiyovu Residence"/>
+          <div class="pb-info"><p class="pb-cat">Residential · Kiyovu</p><h3 class="pb-title">The Kiyovu Residence</h3></div>
+        </div>
+        <div class="pb-item">
+          <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=700&q=80" alt="Tech Hub"/>
+          <div class="pb-info"><p class="pb-cat">Commercial · Kacyiru</p><h3 class="pb-title">Innovation Hub</h3></div>
+        </div>
+        <div class="pb-item">
+          <img src="https://images.unsplash.com/photo-1631679706909-1844bbd07221?w=600&q=80" alt="Glass Villa"/>
+          <div class="pb-info"><p class="pb-cat">Residential · Nyarutarama</p><h3 class="pb-title">Glass Villa</h3></div>
+        </div>
+        <div class="pb-item">
+          <img src="https://images.unsplash.com/photo-1583847268964-b28dc8f51f92?w=600&q=80" alt="Restaurant"/>
+          <div class="pb-info"><p class="pb-cat">Hospitality · CBD</p><h3 class="pb-title">Umucyo Restaurant</h3></div>
+        </div>
+        <div class="pb-item">
+          <img src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=700&q=80" alt="Office"/>
+          <div class="pb-info"><p class="pb-cat">Commercial · Gasabo</p><h3 class="pb-title">Flagship HQ</h3></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ PROCESS ════════════════════════════════════════════ -->
+  <section id="process">
+    <div class="process-inner">
+      <div class="process-header reveal">
+        <p class="section-tag">How We Work</p>
+        <h2 class="big-head" style="font-size:clamp(3rem,5vw,6rem);">
+          THE<br/>PROCESS
+        </h2>
+      </div>
+      <div class="process-steps">
+        <div class="proc-row reveal">
+          <div class="proc-num-side">
+            <div class="proc-big-num">01</div>
+          </div>
+          <div class="proc-text-side">
+            <p class="proc-step-label">Phase One</p>
+            <h3 class="proc-step-title">DISCOVER</h3>
+            <p class="proc-step-desc">We spend time inside the space and inside your thinking. We observe light, measure flows, and listen to everything you want and everything you cannot articulate. This phase ends when we know the project better than you do.</p>
+          </div>
+        </div>
+        <div class="proc-row reveal" style="transition-delay:.1s">
+          <div class="proc-num-side">
+            <div class="proc-big-num">02</div>
+          </div>
+          <div class="proc-text-side">
+            <p class="proc-step-label">Phase Two</p>
+            <h3 class="proc-step-title">CONCEIVE</h3>
+            <p class="proc-step-desc">We develop a bold concept — one clear idea that drives every decision. Materials, volumes, light, furniture, and texture are brought together into a presentation that makes your vision visible for the first time.</p>
+          </div>
+        </div>
+        <div class="proc-row reveal" style="transition-delay:.2s">
+          <div class="proc-num-side">
+            <div class="proc-big-num">03</div>
+          </div>
+          <div class="proc-text-side">
+            <p class="proc-step-label">Phase Three</p>
+            <h3 class="proc-step-title">SPECIFY</h3>
+            <p class="proc-step-desc">Every detail is documented. Technical drawings, 3D renders, material schedules, lighting diagrams. Nothing reaches a craftsperson or contractor until it has been drawn and approved with absolute precision.</p>
+          </div>
+        </div>
+        <div class="proc-row reveal" style="transition-delay:.3s">
+          <div class="proc-num-side">
+            <div class="proc-big-num">04</div>
+          </div>
+          <div class="proc-text-side">
+            <p class="proc-step-label">Phase Four</p>
+            <h3 class="proc-step-title">DELIVER</h3>
+            <p class="proc-step-desc">We manage every installation, coordinate every trade, and stay on-site until the last detail is right. We hand over not a project, but a transformation — and we do not leave until you feel it.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ TESTIMONIALS ═══════════════════════════════════════ -->
+  <section id="testimonials">
+    <div class="testi-inner">
+      <div class="reveal" style="text-align:left;margin-bottom:1rem;">
+        <p class="section-tag">Client Words</p>
+        <h2 class="big-head" style="font-size:clamp(3rem,5vw,6rem);">
+          WHAT<br/>THEY SAY
+        </h2>
+      </div>
+      <div class="testi-grid reveal">
+        <div class="t-card">
+          <div class="t-stars">★ ★ ★ ★ ★</div>
+          <p class="t-quote">"KORA did not decorate our office — they transformed it into a statement. Every client who walks in comments on it. Our team is visibly prouder."</p>
+          <div class="t-author">
+            <div class="t-av"><img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=100&q=80" alt="Jean-Pierre"/></div>
+            <div><div class="t-name">Jean-Pierre Habimana</div><div class="t-role">CEO · Kigali Tech Park</div></div>
+          </div>
+        </div>
+        <div class="t-card">
+          <div class="t-stars">★ ★ ★ ★ ★</div>
+          <p class="t-quote">"We gave them a brief and they gave us back a revelation. The house we thought we knew became something we had never imagined but always wanted."</p>
+          <div class="t-author">
+            <div class="t-av"><img src="https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?w=100&q=80" alt="Amina"/></div>
+            <div><div class="t-name">Amina Uwimana</div><div class="t-role">Homeowner · Nyarutarama</div></div>
+          </div>
+        </div>
+        <div class="t-card">
+          <div class="t-stars">★ ★ ★ ★ ★</div>
+          <p class="t-quote">"Our hotel occupancy climbed 30% in six months after the KORA redesign. Guests book specifically because of how the property looks and feels."</p>
+          <div class="t-author">
+            <div class="t-av"><img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?w=100&q=80" alt="Sophie"/></div>
+            <div><div class="t-name">Sophie Nzeyimana</div><div class="t-role">GM · Kimihurura Boutique Hotel</div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ CONTACT ════════════════════════════════════════════ -->
+  <section id="contact">
+    <div class="contact-wrap">
+      <div class="contact-grid">
+        <div class="contact-left reveal-l">
+          <p class="section-tag">Get In Touch</p>
+          <h2 class="big-head" style="font-size:clamp(3rem,5vw,6rem);">
+            LET'S<br/>BUILD
+            <em>something unforgettable</em>
+          </h2>
+          <p class="body-p" style="margin-top:1rem;max-width:340px;">
+            Every great project begins with one conversation. Tell us about your space and your ambitions — we will tell you what we see.
+          </p>
+          <div class="contact-deets">
+            <div class="c-row">
+              <div class="c-icon">✉</div>
+              <div><div class="c-label">Email</div><div class="c-val">studio@kora.rw</div></div>
+            </div>
+            <div class="c-row">
+              <div class="c-icon">✆</div>
+              <div><div class="c-label">Phone / WhatsApp</div><div class="c-val">+250 788 000 000</div></div>
+            </div>
+            <div class="c-row">
+              <div class="c-icon">◎</div>
+              <div><div class="c-label">Studio</div><div class="c-val">KG 9 Ave, Kimihurura<br/>Kigali, Rwanda</div></div>
+            </div>
+            <div class="c-row">
+              <div class="c-icon">◷</div>
+              <div><div class="c-label">Hours</div><div class="c-val">Mon–Fri: 8 AM – 6 PM<br/>Sat: By appointment</div></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-form-side reveal-r">
+          <div class="fr2">
+            <div class="fg"><label>First Name</label><input type="text" placeholder="Your name"/></div>
+            <div class="fg"><label>Last Name</label><input type="text" placeholder="Your surname"/></div>
+          </div>
+          <div class="fg"><label>Email</label><input type="email" placeholder="you@example.com"/></div>
+          <div class="fg"><label>Phone / WhatsApp</label><input type="tel" placeholder="+250 7XX XXX XXX"/></div>
+          <div class="fg">
+            <label>Service</label>
+            <select>
+              <option disabled selected value="">What are you interested in?</option>
+              <option>Residential Design</option>
+              <option>Commercial Interiors</option>
+              <option>Hospitality Design</option>
+              <option>Spatial Architecture</option>
+              <option>Bespoke Objects</option>
+              <option>Design Consultation</option>
+            </select>
+          </div>
+          <div class="fg"><label>Project Brief</label><textarea rows="5" placeholder="Tell us about your space, your ambitions, your timeline..."></textarea></div>
+          <button class="form-sub" onclick="handleSub(this)">Send Message →</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ MAP ════════════════════════════════════════════════ -->
+  <div id="map-section">
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63800.4905569226!2d30.02944454557691!3d-1.9440727148095698!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x19dca4258ed8e797%3A0xf32b36a5411d0bc8!2sKigali!5e0!3m2!1sen!2srw!4v1699000000000"
+      allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="KORA Studio Location">
+    </iframe>
+    <div class="map-badge">
+      <span class="map-badge-icon">◎</span>
+      <div class="map-badge-text">
+        <strong>KORA Studio</strong>
+        KG 9 Ave, Kimihurura · Kigali, Rwanda
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══ FOOTER ═════════════════════════════════════════════ -->
+  <footer>
+    <div class="footer-top">
+      <div>
+        <div class="footer-logo-big">KO<span>R</span>A</div>
+        <p class="footer-sub">Kigali's most daring interior design practice. We build spaces that provoke, move, and endure.</p>
+      </div>
+      <div>
+        <p class="fcol-title">Studio</p>
+        <ul class="fcol-links">
+          <li><a href="#about">About KORA</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#process">Process</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="fcol-title">Services</p>
+        <ul class="fcol-links">
+          <li><a href="#services">Residential</a></li>
+          <li><a href="#services">Commercial</a></li>
+          <li><a href="#services">Hospitality</a></li>
+          <li><a href="#services">Spatial Architecture</a></li>
+          <li><a href="#services">Consultation</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="fcol-title">Contact</p>
+        <ul class="fcol-links">
+          <li><a href="mailto:studio@kora.rw">studio@kora.rw</a></li>
+          <li><a href="tel:+250788000000">+250 788 000 000</a></li>
+          <li><a href="#">KG 9 Ave, Kimihurura</a></li>
+          <li><a href="#">Kigali, Rwanda</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p class="footer-copy">© 2026 KORA Studio Ltd. All rights reserved. developed by <a href="http://www.incisordigital.com" style="color: orange">Incisor Digital</a></p>
+      <div class="footer-soc">
+        <a href="#">Instagram</a>
+        <a href="#">LinkedIn</a>
+        <a href="#">Houzz</a>
+        <a href="#">WhatsApp</a>
+      </div>
+    </div>
+  </footer>
+  <!-- ═══ SCRIPTS ════════════════════════════════════════════ -->
+ <script src="Script.js"></script>
+</body>
+</html>
